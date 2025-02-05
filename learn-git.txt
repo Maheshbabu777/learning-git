@@ -1,0 +1,2 @@
+This my introduction to git,
+and learning how to connect git with github
