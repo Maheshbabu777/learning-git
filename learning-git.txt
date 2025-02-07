@@ -2,3 +2,4 @@ This my introduction to git,
 and learning how to connect git with github
 
 learning how to tagging works
+learning how branches works
