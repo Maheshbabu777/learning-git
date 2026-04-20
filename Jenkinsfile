@@ -5,21 +5,29 @@ pipeline {
         githubPush()
     }
 
-   stage('Clone') {
-    steps {
-        git branch: 'main', url: 'https://github.com/Maheshbabu777/learning-git.git'
-    }
-}
+    stages {
 
-        stage('Install') {
+        stage('Build') {
             steps {
-                sh 'echo "Installing..."'
+                echo "Building the project..."
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running tests..."
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying application..."
             }
         }
 
         stage('Done') {
             steps {
-                echo "Pipeline ran successfully!"
+                echo "CI/CD Pipeline executed successfully!"
             }
         }
     }
