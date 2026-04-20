@@ -5,13 +5,11 @@ pipeline {
         githubPush()
     }
 
-    stages {
-
-        stage('Clone') {
-            steps {
-                git 'https://github.com/Maheshbabu777/learning-git'
-            }
-        }
+   stage('Clone') {
+    steps {
+        git branch: 'main', url: 'https://github.com/Maheshbabu777/learning-git.git'
+    }
+}
 
         stage('Install') {
             steps {
