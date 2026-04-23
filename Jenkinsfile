@@ -9,7 +9,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building the project..."
+                echo "Building project..."
             }
         }
 
@@ -22,12 +22,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying application..."
-            }
-        }
-
-        stage('Done') {
-            steps {
-                echo "CI/CD Pipeline executed successfully!"
             }
         }
     }
